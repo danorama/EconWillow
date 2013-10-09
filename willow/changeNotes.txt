@@ -1,0 +1,4 @@
+1) Added "flush" function. This finds all matches on the board and removes them.
+2) Expanded "peek" function so that it returns raw html in divs as well as client input, if relevant.
+3) "Background" function now takes optional arguments that are passed to the function being called.
+4) Messages are now logged in 1000-character increments rather than 70-character increments. This is done because messages were being logged on top of eachother, probably due to an underlying threadlock issue which I can't be bothered to figure out.
